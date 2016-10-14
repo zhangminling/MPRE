@@ -189,7 +189,7 @@
                         <div class="col-xs-12 col-md-12">
                             <div class="widget">
                                 <div class="widget-header ">
-                                    <span class="widget-caption">最近报告单列表</span>
+                                    <span class="widget-caption">测试列表</span>
                                 </div>
                                 <div class="widget-body">
                                     <table class="table table-striped table-bordered table-hover" id="simpledatatable">

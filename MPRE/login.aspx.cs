@@ -27,28 +27,14 @@ public partial class login : System.Web.UI.Page
         //        //判断用户输入验证码是否相等
                 if (Session["CheckCode"].ToString().ToLower() == ValidateCode.Text.ToLower().Trim())
                 {
-        //            //执行用户登录
-        //            int roleID = Util.DoLogin(UserName.Text.Trim(), Password.Text.Trim());
-
-        //            if (roleID == -1)
-        //            {
-                    //ErrorLabel.Text = "用户名或密码错误！";
-                    ErrorLabel.Text = "验证码正确！";
-
-        //            }
-        //            else
-        //            {
-                        if (UserName.Text=="mpre"&&Password.Text=="123m")
-                        {
-
-                            Util.ShowMessage("登录成功！", "Dashboard.aspx");
-                        }
-        //                else
-        //                {
-        //                    Util.ShowMessage("登录成功！", "Dashboard.aspx");
-        //                }
-        //            }
-
+                    if (UserName.Text=="mpre"&&Password.Text=="123m")
+                    {
+                        Util.ShowMessage("登录成功！", "Dashboard.aspx");
+                    }
+                    else
+                    {
+                        ErrorLabel.Text = "用户名或密码错误！";
+                    }
                 }
                 else
                 {
